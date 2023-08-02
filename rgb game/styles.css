@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: rgb(25, 25, 25);
+}
+
+body, .menu__button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+.header, .menu, .grid {
+    display: flex;
+}
+
+.header__aligner, .grid__tiles {
+    max-width: 620px;
+}
+
+.header {
+    height: 130px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.grid__tiles {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu {
+    background-color: white;
+    justify-content: center;
+}
+
+.menu__aligner {
+    max-width: 600px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 86px auto 86px;
+    font-size: 13px;
+}
+
+.menu__button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__mode {
+    gap: 5px;
+}
+
+.menu__button {
+    height: 100%;
+    padding: 2px 5px;
+    margin: 0;
+    background-color: inherit;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: (58, 117, 172);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.menu__button--newgame {
+    margin: 0 15px;
+}
+
+.menu__button:hover {
+    background-color: rgb(58, 117, 172);
+    color: white;
+}
+
+.grid {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.grid__tiles {
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.grid__tile {
+    width: 100%;
+    aspect-ratio: 1/0.85;
+    border-radius: 20px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.grid__tile, .header {
+    transition: background-color 400ms linear;
+    transition: opacity 400ms linear;
+}
+
+/* EASY MODE TOGGLE */
+
+.mode-on {
+    background-color: rgb(58, 117, 172);
+    color: white;
+}
+
